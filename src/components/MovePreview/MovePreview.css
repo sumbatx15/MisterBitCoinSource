@@ -1,0 +1,21 @@
+.move-preview .details {
+  display: flex;
+  flex-flow: column;
+  padding: 7px 20px; }
+  .move-preview .details .to {
+    color: white;
+    font-weight: 100;
+    margin-bottom: 5px; }
+  .move-preview .details .amount {
+    font-size: 1.1em;
+    color: #b6ff2f; }
+    .move-preview .details .amount-converted {
+      color: #6c879e; }
+  .move-preview .details .status .pending {
+    color: var(--priamry); }
+  .move-preview .details .status .approve {
+    color: var(--secondary); }
+  .move-preview .details .at {
+    font-weight: normal;
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.548); }

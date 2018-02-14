@@ -1,0 +1,28 @@
+.moves-list {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+    box-sizing: border-box;
+    overflow: hidden;
+    &-header{
+        background: rgba(0, 0, 0, 0.198);
+        padding: 10px 20px;
+        h4{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &-content{
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+                    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+            list-style: none;
+        }   
+    }
+}

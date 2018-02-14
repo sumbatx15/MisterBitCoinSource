@@ -1,0 +1,13 @@
+.contact-filter {
+  height: 100%; }
+  .contact-filter input {
+    width: 100%;
+    height: 100%;
+    padding: 0 17px;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: none;
+    color: #dde1ee;
+    background-color: rgba(0, 0, 0, 0.794); }
+    .contact-filter input:focus {
+      outline: none; }

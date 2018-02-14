@@ -1,0 +1,90 @@
+:root {
+    --priamry:  rgb(236, 78, 110);
+    --secondary:  rgb(78, 165, 236);
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background-image: url('assets/bg3.png');
+    background-attachment: fixed;
+    background-color: var(--secondary);
+    background-size: cover;
+}
+#root {
+    margin: 0 auto;    
+    height: 100%;
+    max-width: 100%;
+    color: rgb(246, 246, 246);
+
+}
+/*
+ *  STYLE 2
+ */
+
+::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 10px;
+ }
+ 
+::-webkit-scrollbar
+ {
+     width: 5px;
+     background-color: rgba(31, 31, 31, 0.363);
+ }
+ 
+::-webkit-scrollbar-thumb
+ {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: var(--priamry);
+ }
+.app-main {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.app {
+    height: 100%;
+    box-sizing: border-box;
+
+    .app-header {
+        position: relative;
+        display: flex;
+        height: 40px;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.267);
+        border-bottom: 1px solid rgba(0, 0,0, 0.3);
+        padding: 8px 20px;
+        overflow: hidden;
+    }
+    .app-header .logo{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .app-header h4{
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+
+    .app-content {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+
+    [class^="flaticon-"]:before, 
+    [class*=" flaticon-"]:before, 
+    [class^="flaticon-"]:after, 
+    [class*=" flaticon-"]:after {
+        margin: 0;
+    }
+}

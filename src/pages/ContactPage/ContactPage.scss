@@ -1,0 +1,40 @@
+.contacts-page {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    
+    .search-container { 
+        height: 45px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid #0a0c0e;
+    }
+
+    .contacts-container {
+        max-width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        max-height: 100%;
+        // padding: 10px 10px 10px 10px;
+        overflow-x: hidden;
+    }
+
+    .action-container {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+
+        a {
+            border-radius: 50%;
+            // box-shadow: inset 0px 0px 45px rgba(0, 0, 0, 0.589) , 0px 0px 25px rgba(0, 0, 0, 0.418);
+            padding: 10px 20px;
+            background: var(--priamry);
+            color: #fff;
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.contact-details {
+  position: relative;
+  width: 100%; }
+  .contact-details-header {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    padding: 0 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.794);
+    border-bottom: 1px solid rgba(8, 8, 10, 0.5); }
+  .contact-details .contact-details-row-name {
+    color: var(--priamry);
+    font-size: 2em; }
+  .contact-details .contact-details-row-phone {
+    font-size: 1.2em; }
+  .contact-details .contact-details-row-name {
+    font-size: 2em; }
+  .contact-details .contact-details-body {
+    background: linear-gradient(rgba(1, 17, 31, 0.7), rgba(255, 255, 0, 0));
+    border-top: 1px solid #252525;
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; }
+    .contact-details .contact-details-body img {
+      border: 7px solid #ffffff;
+      border-radius: 50%; }
+    .contact-details .contact-details-body * {
+      margin-bottom: 10px; }
+  .contact-details .contact-transfer {
+    position: relative;
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contact-details .contact-transfer .anim-value {
+      opacity: 0;
+      font-family: 'Lato', sans-serif;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      padding: 0 15px;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .contact-details .contact-transfer input {
+      font-family: 'Lato', sans-serif;
+      border: 1px solid rgba(8, 8, 10, 0.5);
+      background-color: rgba(8, 8, 10, 0.5);
+      color: white;
+      padding: 0 15px;
+      height: 40px;
+      width: 100%;
+      border-radius: 5px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      box-sizing: border-box;
+      transition: all 150ms; }
+      .contact-details .contact-transfer input:focus {
+        outline: none;
+        border: 1px solid rgba(14, 187, 255, 0.87);
+        box-shadow: 0 0 15px rgba(14, 187, 255, 0.377); }
+    .contact-details .contact-transfer button {
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+      background: var(--priamry);
+      color: white;
+      border: none;
+      height: 40px;
+      margin: 0;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      cursor: pointer; }
+
+@keyframes sendCoinAnimation {
+  0% {
+    opacity: 0;
+    font-size: 1em;
+    color: white; }
+  1% {
+    opacity: 1; }
+  50% {
+    transform: translate(-15px, -50px);
+    font-size: 1.3em; }
+  60% {
+    opacity: 0.7; }
+  100% {
+    opacity: 0;
+    transform: translate(-35px, 110px);
+    color: #b6ff2f; } }
